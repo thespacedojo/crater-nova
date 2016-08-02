@@ -1,9 +1,14 @@
 import React, { PropTypes, Component } from 'react';
 import { FlashContainer } from "meteor/nova:core";
+import CrSidebar from './CrSidebar';
 
 class CrLayout extends Component {
 
   render() {
+
+    const logoUrl = Telescope.settings.get("logoUrl");
+    const siteTitle = Telescope.settings.get("title", "Nova");
+    const tagline = Telescope.settings.get("tagline");
 
     return (
       <div className="wrapper" id="wrapper">
@@ -12,21 +17,18 @@ class CrLayout extends Component {
 
         <Telescope.components.UsersProfileCheck {...this.props} />
 
-        {/*
-        <Telescope.components.Header {...this.props}/>
-        */}
-
         <div className="top">
 
-          <div className="header">
+          <div className="top-inner">
 
-            <div>Crater</div>
+            <Telescope.components.Header {...this.props}/>
 
             <FlashContainer component={Telescope.components.FlashMessages}/>
 
             <Telescope.components.Newsletter />
 
           </div>
+
         </div>
 
         <div className="main">
@@ -35,9 +37,7 @@ class CrLayout extends Component {
               {this.props.children}
             </div>
             
-            <div className="sidebar">
-              this is the sidebar
-            </div>
+            <CrSidebar/>
 
         </div>
 

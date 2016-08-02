@@ -1,0 +1,23 @@
+
+.sidebar{
+  width: 250px;
+  padding-top: 30px;
+  flex-shrink: 0;
+}
+
+.podcast{
+  border: 1px solid black(0.3);
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.search-form{
+  margin-bottom: 20px;
+  .form-control{
+    border-radius: 30px;
+    background: none;
+    @include secondary-font;
+  }
+}
