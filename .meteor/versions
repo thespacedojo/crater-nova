@@ -15,10 +15,12 @@ blaze@2.1.8
 blaze-tools@1.0.9
 boilerplate-generator@1.0.9
 caching-compiler@1.0.6
+caching-html-compiler@1.0.6
 callback-hook@1.0.9
 check@1.2.3
 chuangbo:cookie@1.1.0
 coffeescript@1.1.4
+crater@0.0.0
 dburles:collection-helpers@1.0.4
 ddp@1.2.5
 ddp-client@1.2.9
@@ -83,6 +85,7 @@ nova:email-templates@0.26.5-nova
 nova:embedly@0.26.5-nova
 nova:events@0.26.5-nova
 nova:forms@0.26.5-nova
+nova:forms-tags@0.26.5-nova
 nova:getting-started@0.26.5-nova
 nova:i18n-en-us@0.26.5-nova
 nova:kadira@0.26.5-nova
@@ -126,7 +129,9 @@ srp@1.0.9
 standard-minifier-css@1.0.8
 standard-minifier-js@1.0.8
 standard-minifiers@1.0.6
+static-html@1.0.12
 std:accounts-ui@1.2.6
+templating-tools@1.0.4
 tmeasday:check-npm-versions@0.3.1
 tmeasday:publish-counts@0.7.3
 tracker@1.1.0
