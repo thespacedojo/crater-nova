@@ -48,3 +48,12 @@
   text-align: center;
   @include secondary-font;
 }
+
+.posts-categories{
+  a{
+    &:hover{
+      background: $secondary-color;
+      border-color: $secondary-color;
+    }
+  }
+}
