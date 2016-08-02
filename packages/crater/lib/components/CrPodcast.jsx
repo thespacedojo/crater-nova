@@ -5,7 +5,7 @@ const CrPodcast = () => {
   return (
     <div className="podcast">
 
-      podcast
+      *podcast goes here*
 
     </div>
   )

@@ -23,9 +23,9 @@ class CrLayout extends Component {
 
             <Telescope.components.Header {...this.props}/>
 
-            <FlashContainer component={Telescope.components.FlashMessages}/>
-
             <Telescope.components.Newsletter />
+
+            <FlashContainer component={Telescope.components.FlashMessages}/>
 
           </div>
 

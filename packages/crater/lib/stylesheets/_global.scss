@@ -1,7 +1,7 @@
 
 
 body{
-  background: #eeeeee;
+  background: $grey;
 
   @include primary-font;
 }
@@ -34,9 +34,7 @@ a{
 .main-column{
   flex-grow: 1;
   background: #fff;
-  padding: 0px 0px 30px 0px;
-  margin-right: 30px;
-  // margin-top: -5px;
+  margin: 0 30px 30px 0;
   position: relative;
   z-index: 10;
   border-radius: 0 0 5px 5px;
@@ -55,7 +53,7 @@ a{
     display: block;
     content: " ";
     // background: #aca6b9;
-    background: #bbb6c8 linear-gradient(to top, #908b9e 0%, #aaa5b6 50%);
+    background: $light-purple linear-gradient(to top, #908b9e 0%, #aaa5b6 50%);
     height: 20px;
     position: absolute;
     top: -20px;
@@ -71,6 +69,9 @@ a{
   margin-top: 60px;
   margin-bottom: 90px;
   border: 1px solid white(0.2);
+}
+.newsletter-tagline{
+  margin-right: 20px;
 }
 
 .btn{

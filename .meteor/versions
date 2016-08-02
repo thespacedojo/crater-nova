@@ -82,7 +82,6 @@ nova:core@0.26.5-nova
 nova:debug@0.26.5-nova
 nova:email@0.26.5-nova
 nova:email-templates@0.26.5-nova
-nova:embedly@0.26.5-nova
 nova:events@0.26.5-nova
 nova:forms@0.26.5-nova
 nova:forms-tags@0.26.5-nova

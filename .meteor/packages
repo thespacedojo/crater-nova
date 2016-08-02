@@ -15,7 +15,8 @@ nova:getting-started
 nova:categories
 nova:voting
 nova:forms
-nova:embedly
+nova:forms-tags
+# nova:embedly
 nova:api
 nova:rss
 nova:kadira
