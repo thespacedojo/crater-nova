@@ -11,10 +11,13 @@ class CrPostsHome extends Component {
   }
   
   renderIntro() {
+    
+    const button = <Button className="posts-home-intro-button" bsStyle="primary">Sign Up</Button>;
+
     return (
       <div className="posts-home-intro">
         <h2 className="posts-home-intro-tagline">
-        Crater.io: the latest programming news lands here first
+        Crater.io: the latest programming news lands here first!
         </h2>
         <ModalTrigger title="Sign Up/Log In" size="small" component={button}>
           <Telescope.components.UsersAccountForm />
@@ -27,8 +30,6 @@ class CrPostsHome extends Component {
 
     const params = {...this.getDefaultView(), ...this.props.location.query, listId: "posts.list.main"};
     const {selector, options} = Posts.parameters.get(params);
-
-    const button = <Button className="posts-home-intro-button" bsStyle="primary">Sign Up</Button>;
 
     return (
       <div className="posts-home">
