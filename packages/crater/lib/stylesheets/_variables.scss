@@ -9,19 +9,19 @@ $larger-font: 1.35rem;
 
 // $border: 1px solid $light-border;
 
-// @mixin activeHover{
-//   &:hover{
-//     background: $active-color;
-//     color: $white;
-//     border-color: $active-color;
-//     text-decoration: none;
-//   }
-// }
+@mixin active-hover{
+  &:hover{
+    background: $secondary-color;
+    color: $white;
+    border-color: $secondary-color;
+    text-decoration: none;
+  }
+}
 
-// @mixin flex-center{
-//   display: flex;
-//   align-items: center;
-// }
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+}
 
 // @mixin border-radius{
 //   border-radius: .25rem;

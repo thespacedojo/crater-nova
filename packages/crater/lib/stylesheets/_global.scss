@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5{
 
 a{
   color: $primary-color;
-  &:hover, &:active{
+  &:hover, &:active, &:focus{
     color: $secondary-color;
     text-decoration: none;
   }
@@ -67,4 +67,8 @@ a{
 
 .btn{
   @include secondary-font;
+}
+
+.footer{
+  margin-bottom: 30px;
 }

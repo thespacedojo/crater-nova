@@ -1,14 +1,27 @@
 
 
+.posts-home-intro{
+  padding: 20px 30px;
+  border-top: 1px dashed $border-color;  
+  border-bottom: 1px dashed $border-color;
+  margin-bottom: 20px;
+  @include flex-center;
+  justify-items: center;
+  background: $dark-grey;
+}
+.posts-home-intro-tagline{
+  font-size: 1.3rem;
+  margin: 0 10px 0 0;
+}
+.posts-home-intro-button{
 
-
+}
 .posts-list-content{
   border-top: none;
   margin: 0;
 }
 .posts-item{
   padding: 20px 30px;
-  position: relative;
   border-bottom: 1px dashed $border-color;
   &:first-child{
     padding-top: 0;
@@ -17,6 +30,9 @@
 .posts-item-title{
   letter-spacing: -0.5px;
   font-size: 1.25rem;
+  a:hover{
+    color: $secondary-color;
+  }
 }
 .posts-item-meta{
   font-size: 0.8rem;
@@ -52,8 +68,13 @@
 .posts-categories{
   a{
     &:hover{
-      background: $secondary-color;
-      border-color: $secondary-color;
+      @include active-hover;
     }
+  }
+}
+
+.upvote-button{
+  &:hover{
+    @include active-hover;
   }
 }

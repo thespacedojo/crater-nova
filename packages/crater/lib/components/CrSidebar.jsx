@@ -2,6 +2,7 @@ import React from 'react';
 import { ListContainer } from "meteor/utilities:react-list-container";
 import Categories from "meteor/nova:categories";
 import CrPodcast from './CrPodcast.jsx';
+import CrCategoriesList from './CrCategoriesList.jsx';
 
 const CrSidebar = () => {
   
@@ -16,7 +17,7 @@ const CrSidebar = () => {
         collection={Categories} 
         limit={0} 
         resultsPropName="categories" 
-        component={Telescope.components.CategoriesList}
+        component={CrCategoriesList}
         listId="categories"
       />    
       </div>

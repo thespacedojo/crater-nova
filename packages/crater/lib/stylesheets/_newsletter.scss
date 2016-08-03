@@ -1,11 +1,33 @@
-
+.newsletter-wrapper{
+  display: flex;
+  justify-content: center;
+}
 .newsletter{
+  padding: 20px;
   background: none;
   margin-top: 60px;
   margin-bottom: 90px;
-  border: 1px solid white(0.2);
-  border: none;
-}
-.newsletter-tagline{
-  margin-right: 20px;
+  border: 1px solid white(0.3);
+  background: white(0.1);
+  // border: none;
+  .newsletter-tagline{
+    margin-right: 20px;
+  }
+  .newsletter-close{
+    color: $white;
+    top: -12px;
+    right: -12px;
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    background: white(0.3);
+    @include flex-center;
+    justify-content: center;
+    i{
+      display: block;
+    }
+    &:hover{
+      @include active-hover;
+    }
+  }
 }
