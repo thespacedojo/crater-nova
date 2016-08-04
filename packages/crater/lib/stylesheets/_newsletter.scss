@@ -1,14 +1,13 @@
 .newsletter-wrapper{
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 .newsletter{
   padding: 20px;
   background: none;
   border: 1px solid white(0.3);
   background: white(0.1);
-  margin: 0;
+  margin: 0 0 60px 0;
   // border: none;
   .newsletter-tagline{
     margin-right: 20px;
@@ -32,5 +31,9 @@
   }
   .form-control{
     border: none;
+  }
+  .newsletter-button{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
   }
 }

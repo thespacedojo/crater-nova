@@ -1,0 +1,39 @@
+
+.podcast{
+  border: 1px dashed $border-color;
+  margin-bottom: 20px;
+  iframe{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+}
+.podcast-heading{
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-bottom: 1px dashed $border-color;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  color: $light-text-color;
+  &:before{
+    content: "–––";
+  }
+  &:after{
+    content: "–––";
+  }
+}
+.podcast-content{
+  padding: 20px;
+}
+.podcast-title{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.podcast-date{
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.podcast-links{
+  font-size: 0.8rem;
+}

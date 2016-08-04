@@ -11,6 +11,16 @@ const canEditAll = user => Users.canDo(user, "posts.edit.all");
 
 Posts.addField([
   {
+    fieldName: 'podcastId',
+    fieldSchema: {
+      type: String,
+      insertableIf: canEditAll,
+      editableIf: canEditAll,
+      publish: true,
+      group: Posts.formGroups.admin
+    }
+  },
+  {
     fieldName: 'categories',
     fieldSchema: {
       type: [String],
