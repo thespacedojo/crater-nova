@@ -17,7 +17,8 @@ Posts.addField([
       insertableIf: canEditAll,
       editableIf: canEditAll,
       publish: true,
-      group: Posts.formGroups.admin
+      group: Posts.formGroups.admin,
+      optional: true
     }
   },
   {

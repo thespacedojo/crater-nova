@@ -28,13 +28,18 @@ a{
 }
 
 .main{
-  display: flex;
+  @include medium-large{
+    display: flex;
+  }
 }
 
 .main-column{
-  flex-grow: 1;
   background: #fff;
-  margin: 0 30px 30px 0;
+  margin-bottom: 30px;
+  @include medium-large{
+    flex-grow: 1;
+    margin-right: 30px;
+  }
   position: relative;
   z-index: 10;
   border-radius: 0 0 5px 5px;
@@ -71,6 +76,8 @@ a{
 
 .footer{
   margin-bottom: 30px;
+  font-size: 0.8rem;
+  color: $light-text-color;
 }
 
 

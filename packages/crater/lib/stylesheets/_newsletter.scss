@@ -7,10 +7,20 @@
   background: none;
   border: 1px solid white(0.3);
   background: white(0.1);
-  margin: 0 0 60px 0;
+  @include small{
+    margin: 0 0 30px 0;
+  }
+  @include medium-large{
+    margin: 0 0 60px 0;
+  }
   // border: none;
   .newsletter-tagline{
-    margin-right: 20px;
+    @include small{
+      font-size: 1.2rem;
+    }
+    @include medium-large{
+      margin-right: 20px;
+    }
   }
   .newsletter-close{
     color: $white;

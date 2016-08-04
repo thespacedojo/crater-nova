@@ -6,11 +6,16 @@
   border-bottom: 1px dashed $border-color;
   margin-bottom: 20px;
   @include flex-center;
-  justify-items: center;
+  justify-content: center;
   background: $dark-grey;
 }
 .posts-home-intro-tagline{
-  font-size: 1.3rem;
+  @include small{
+    font-size: 1rem;
+  }
+  @include medium-large{
+    font-size: 1.3rem;
+  }
   margin: 0 10px 0 0;
 }
 .posts-home-intro-button{
@@ -29,7 +34,12 @@
 }
 .posts-item-title{
   letter-spacing: -0.5px;
-  font-size: 1.25rem;
+  @include small{
+    font-size: 1rem;
+  }
+  @include medium-large{
+    font-size: 1.25rem;
+  }
   a:hover{
     color: $secondary-color;
   }
@@ -77,4 +87,13 @@
   &:hover{
     @include active-hover;
   }
+}
+
+.posts-load-more{
+  @include secondary-font;
+  padding: 20px 30px;
+  border: none;
+  @include active-hover;
+  color: $primary-color;
+  font-size: 1rem;
 }

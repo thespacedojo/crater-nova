@@ -16,7 +16,12 @@
 
 .header-wrapper{
   background: none;
-  margin-bottom: 60px;
+  @include small{
+    margin-bottom: 30px;
+  }
+  @include medium-large{
+    margin-bottom: 60px;
+  }
 }
 
 .header{
@@ -50,7 +55,16 @@
 }
 
 .nav{
+  @include small{
+    flex-direction:column;
+  }
   .nav-item{
+    @include small{
+      margin: 0 0 10px 0;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
     @include secondary-font;
     color: white;
     margin-right: 30px;
