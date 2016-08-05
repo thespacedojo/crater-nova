@@ -18,16 +18,17 @@ a{
   }
 }
 
-.btn-primary{
+.btn-primary, .btn-primary.active{
   background: $primary-color;
   border-color: $primary-color;
-  &:hover{
-    background: $secondary-color;
-    border-color: $secondary-color;    
+  &:hover, &:focus, &:active{
+    background: $secondary-color !important;
+    border-color: $secondary-color !important;
   }
 }
 
 .main{
+  margin-bottom: 30px;
   @include medium-large{
     display: flex;
   }
@@ -35,7 +36,6 @@ a{
 
 .main-column{
   background: #fff;
-  margin-bottom: 30px;
   @include medium-large{
     flex-grow: 1;
     margin-right: 30px;
@@ -43,6 +43,7 @@ a{
   position: relative;
   z-index: 10;
   border-radius: 0 0 5px 5px;
+  // box-shadow: 2px 2px 0px 2px black(0.05);
   &:before{
     display: block;
     content: " ";
