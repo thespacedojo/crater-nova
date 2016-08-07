@@ -43,7 +43,7 @@ class CrPostsHome extends Component {
           joins={Posts.getJoins()}
           component={Telescope.components.PostsList}
           componentProps={{showHeader: false}}
-          cacheSubscription={false}
+          cacheSubscription={true}
           listId={params.listId}
           limit={Telescope.settings.get("postsPerPage", 10)}
         />
