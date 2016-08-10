@@ -1,3 +1,4 @@
+import Telescope from 'meteor/nova:lib';
 import React, { PropTypes, Component } from 'react';
 import { Button, DropdownButton, MenuItem } from 'react-bootstrap';
 import classNames from "classnames";
@@ -9,7 +10,11 @@ import Users from 'meteor/nova:users';
 class Category extends Component {
 
   renderEdit() {
-    return <a onClick={this.props.openModal} className="edit-category-link"><Telescope.components.Icon name="edit"/></a>;
+    return (
+      <Telescope.components.CanDo action="categories.edit.all">
+        <a onClick={this.props.openModal} className="edit-category-link"><Telescope.components.Icon name="edit"/></a>
+      </Telescope.components.CanDo>
+    );
     // return (
     //   <ModalTrigger title="Edit Category" component={<a className="edit-category-link"><Telescope.components.Icon name="edit"/></a>}>
     //     <Telescope.componentsCategoriesEditForm category={this.props.category}/>
