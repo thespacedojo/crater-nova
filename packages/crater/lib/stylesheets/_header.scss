@@ -75,6 +75,9 @@
   .users-account-menu .dropdown-toggle, .users-menu .dropdown-toggle{
     border: none;
   }
+  .dropdown-toggle{
+    color: $white;
+  }
 }
 
 .posts-new-button{
