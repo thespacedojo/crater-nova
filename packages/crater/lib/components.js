@@ -1,3 +1,4 @@
+import Telescope from 'meteor/nova:lib';
 import CrPostsHome from './components/CrPostsHome.jsx';
 import CrLayout from './components/CrLayout.jsx';
 import CrLogo from './components/CrLogo.jsx';

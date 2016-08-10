@@ -5,8 +5,6 @@ import Posts from 'meteor/nova:posts';
 
 // note: post.postedAt is sometimes the empty object when SSR'ing (see https://github.com/kadirahq/flow-router/issues/639)
 const Podcast = ({post}) => {
-  console.log("// post")
-  console.log(post.postedAt)
   return (
     <div className="podcast-content">
       <h3 className="podcast-title">{post.title}</h3>
