@@ -31,7 +31,7 @@ nova:forms-tags
 
 ############ Customizable Packages ############
 
-# nova:base-components
+# nova:base-components # loaded by meteor-webpack instead
 # nova:base-styles
 # nova:base-routes
 
@@ -50,3 +50,4 @@ accounts-password
 ############ Your Packages ############
 
 crater
+# crater-frontend # loaded by meteor-webpack instead
