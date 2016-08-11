@@ -75,7 +75,7 @@ Telescope.registerComponent("UsersAvatar",          require('./users/UsersAvatar
 Telescope.registerComponent("UsersName",            require('./users/UsersName.jsx'));
 Telescope.registerComponent("UsersAccountMenu",     require('./users/UsersAccountMenu.jsx'));
 // TODO: uncomment this
-Telescope.registerComponent("UsersMenu",            require('./common/Footer.jsx'));
-Telescope.registerComponent("UsersAccountForm",     require('./common/Footer.jsx'));
-// Telescope.registerComponent("UsersMenu",            require('./users/UsersMenu.jsx'));
-// Telescope.registerComponent("UsersAccountForm",     require('./users/UsersAccountForm.jsx'));
+// Telescope.registerComponent("UsersMenu",            require('./common/Footer.jsx'));
+// Telescope.registerComponent("UsersAccountForm",     require('./common/Footer.jsx'));
+Telescope.registerComponent("UsersMenu",            require('./users/UsersMenu.jsx'));
+Telescope.registerComponent("UsersAccountForm",     require('./users/UsersAccountForm.jsx'));
