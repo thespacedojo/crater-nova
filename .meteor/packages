@@ -13,21 +13,21 @@ nova:users
 nova:posts
 nova:comments
 nova:categories
-nova:forms
-nova:forms-tags
+# nova:forms # loaded by meteor-webpack instead
+# nova:forms-tags # loaded by meteor-webpack instead?
 
-# nova:settings
-# nova:newsletter
-# nova:search
-# nova:notifications
-# nova:getting-started
-# nova:voting
-# nova:embedly
-# nova:api
-# nova:rss
-# nova:kadira
-# nova:email
-# nova:subscribe
+nova:settings
+nova:newsletter
+nova:search
+nova:notifications
+nova:getting-started
+nova:voting
+nova:embedly
+nova:api
+nova:rss
+nova:kadira
+nova:email
+nova:subscribe
 
 ############ Customizable Packages ############
 

@@ -36,7 +36,7 @@ class AccountsButton extends Accounts.ui.Button {
 }
 
 class AccountsField extends Accounts.ui.Field {
-
+  
   // see https://github.com/studiointeract/accounts-ui/issues/60
   triggerUpdate () {
     const { onChange } = this.props

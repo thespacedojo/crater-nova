@@ -13,7 +13,7 @@ Package.onUse(function(api) {
     'nova:core',
     'nova:posts',
     'nova:users',
-    'nova:base-components',
+    // 'nova:base-components',
     'nova:email-templates',
     'nova:newsletter',
     'nova:forms-tags',
