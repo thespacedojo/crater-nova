@@ -14,6 +14,7 @@ nova:posts
 nova:comments
 nova:categories
 nova:forms
+nova:forms-tags
 
 # nova:settings
 # nova:newsletter
@@ -48,4 +49,4 @@ accounts-password
 
 ############ Your Packages ############
 
-# my-custom-package
+crater

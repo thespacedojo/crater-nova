@@ -1,0 +1,91 @@
+
+.top{
+  background: #11132E;
+  background: url('http://conf.crater.io/images/crater-remote-conf.jpeg');
+  background: url('/crater-bg.png');
+  color: white;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.top-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-wrapper{
+  background: none;
+  @include small{
+    margin-bottom: 30px;
+  }
+  @include medium-large{
+    margin-bottom: 60px;
+  }
+}
+
+.header{
+  padding: 15px 0 0 0;
+  margin: 0;
+}
+
+
+.logo, .tagline{
+  margin-bottom: 0;
+}
+
+.tagline{
+  display: none;
+}
+
+.logo-image{
+  height: 50px;
+  width: 50px;
+  a{
+    display: block;
+  }
+  img{
+    height: 50px;
+    width: 50px;
+  }
+}
+.logo-text{
+  color: white;
+  font-size: 1.8rem;
+}
+
+.nav{
+  @include small{
+    flex-direction:column;
+  }
+  .nav-item{
+    @include small{
+      margin: 0 0 10px 0;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    @include secondary-font;
+    color: white;
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .users-account-menu .dropdown-toggle, .users-menu .dropdown-toggle{
+    border: none;
+  }
+  .dropdown-toggle{
+    color: $white;
+  }
+}
+
+.posts-new-button{
+  background: none;
+  border-color: $white;
+}
+
+
+.flash-message{
+  margin-bottom: 30px;
+}

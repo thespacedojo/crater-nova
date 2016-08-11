@@ -1,0 +1,32 @@
+
+.sidebar{
+  width: 250px;
+  padding-top: 30px;
+  flex-shrink: 0;
+  @include small{
+    display: none;
+  }
+}
+
+
+.search-form{
+  margin-bottom: 20px;
+  .form-control{
+    border-radius: 30px;
+    background: none;
+    @include secondary-font;
+  }
+}
+
+.categories-list{
+  display: block;
+  .posts-category{
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  .posts-category-active{
+    background: $secondary-color;
+    border-color: $secondary-color;
+    color: white;
+  }
+}

@@ -1,0 +1,49 @@
+.newsletter-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.newsletter{
+  padding: 20px;
+  background: none;
+  border: 1px solid white(0.3);
+  background: white(0.1);
+  @include small{
+    margin: 0 0 30px 0;
+  }
+  @include medium-large{
+    margin: 0 0 60px 0;
+  }
+  // border: none;
+  .newsletter-tagline{
+    @include small{
+      font-size: 1.2rem;
+    }
+    @include medium-large{
+      margin-right: 20px;
+    }
+  }
+  .newsletter-close{
+    color: $white;
+    top: -12px;
+    right: -12px;
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    background: white(0.3);
+    @include flex-center;
+    justify-content: center;
+    i{
+      display: block;
+    }
+    &:hover{
+      @include active-hover;
+    }
+  }
+  .form-control{
+    border: none;
+  }
+  .newsletter-button{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}

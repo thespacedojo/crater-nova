@@ -1,0 +1,87 @@
+
+
+body{
+  background: $grey;
+
+  @include primary-font;
+}
+h1, h2, h3, h4, h5{
+  @include secondary-font;
+}
+
+
+a{
+  color: $primary-color;
+  &:hover, &:active, &:focus{
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+.btn-primary, .btn-primary.active{
+  background: $primary-color;
+  border-color: $primary-color;
+  &:hover, &:focus, &:active{
+    background: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+}
+
+.main{
+  margin-bottom: 30px;
+  @include medium-large{
+    display: flex;
+  }
+}
+
+.main-column{
+  background: #fff;
+  @include medium-large{
+    flex-grow: 1;
+    margin-right: 30px;
+  }
+  position: relative;
+  z-index: 10;
+  border-radius: 0 0 5px 5px;
+  // box-shadow: 2px 2px 0px 2px black(0.05);
+  &:before{
+    display: block;
+    content: " ";
+    background: white;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    left: -14px;
+    border-radius: 0 20px 0 0;
+    right: 0px;
+  }
+  &:after{
+    display: block;
+    content: " ";
+    // background: #aca6b9;
+    background: $light-purple linear-gradient(to top, #908b9e 0%, #aaa5b6 50%);
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    width: 30px;
+    border-radius: 20px 20px 0 0;
+    z-index: 50;
+  }
+}
+
+
+.btn{
+  @include secondary-font;
+}
+
+.footer{
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+  color: $light-text-color;
+}
+
+
+.page{
+  padding: 30px;
+}

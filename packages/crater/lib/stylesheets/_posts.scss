@@ -1,0 +1,99 @@
+
+
+.posts-home-intro{
+  padding: 20px 30px;
+  border-top: 1px dashed $border-color;  
+  border-bottom: 1px dashed $border-color;
+  margin-bottom: 20px;
+  @include flex-center;
+  justify-content: center;
+  background: $dark-grey;
+}
+.posts-home-intro-tagline{
+  @include small{
+    font-size: 1rem;
+  }
+  @include medium-large{
+    font-size: 1.3rem;
+  }
+  margin: 0 10px 0 0;
+}
+.posts-home-intro-button{
+
+}
+.posts-list-content{
+  border-top: none;
+  margin: 0;
+}
+.posts-item{
+  padding: 20px 30px;
+  border-bottom: 1px dashed $border-color;
+  &:first-child{
+    padding-top: 0;
+  }
+}
+.posts-item-title{
+  letter-spacing: -0.5px;
+  @include small{
+    font-size: 1rem;
+  }
+  @include medium-large{
+    font-size: 1.25rem;
+  }
+  a:hover{
+    color: $secondary-color;
+  }
+}
+.posts-item-meta{
+  font-size: 0.8rem;
+}
+.posts-thumbnail{
+  display: none;
+}
+
+.posts-page{
+  .posts-item{
+    border: none;
+    border-bottom: 1px dashed $border-color;
+    padding: 0 30px 20px 30px;
+  }
+  .posts-page-body{
+    border-bottom: 1px dashed $border-color;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+  }
+  .posts-comments-thread{
+    padding: 20px 30px;
+    border-top: none;
+  }
+}
+
+.posts-no-more{
+  padding: 30px;
+  margin: 0;
+  text-align: center;
+  @include secondary-font;
+}
+
+.posts-categories{
+  a{
+    &:hover{
+      @include active-hover;
+    }
+  }
+}
+
+.upvote-button{
+  &:hover{
+    @include active-hover;
+  }
+}
+
+.posts-load-more{
+  @include secondary-font;
+  padding: 20px 30px;
+  border: none;
+  @include active-hover;
+  color: $primary-color;
+  font-size: 1rem;
+}
