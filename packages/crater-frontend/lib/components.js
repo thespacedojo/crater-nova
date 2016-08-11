@@ -10,3 +10,4 @@ Telescope.components.Layout = CrLayout;
 Telescope.components.Logo = CrLogo;
 Telescope.components.Header = CrHeader;
 Telescope.components.Footer = CrFooter;
+

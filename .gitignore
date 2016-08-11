@@ -33,8 +33,6 @@ mup.json
 
 packages_update.py
 
-versions
-
 get_file_list.sh
 packages_update.py
 publish_packages.sh

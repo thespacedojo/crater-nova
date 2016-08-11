@@ -2,7 +2,7 @@ import Telescope from 'meteor/nova:lib';
 import React, { PropTypes, Component } from 'react';
 import { ListContainer, DocumentContainer } from "meteor/utilities:react-list-container";
 import Posts from "meteor/nova:posts";
-import { ModalTrigger } from 'meteor/nova:core';
+import ModalTrigger from 'modal-trigger';
 import { Button } from 'react-bootstrap';
 
 class CrPostsHome extends Component {

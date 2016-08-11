@@ -16,8 +16,8 @@ Package.onUse(function(api) {
     // 'nova:base-components',
     'nova:email-templates',
     'nova:newsletter',
-    'nova:forms-tags',
-    'fourseven:scss',
+    // 'nova:forms-tags',
+    // 'fourseven:scss@3.8.1',
     'static-html'
   ]);
 
