@@ -31,6 +31,9 @@
   &:first-child{
     padding-top: 0;
   }
+  &.posts-sticky{
+    padding-top: 20px;
+  }
 }
 .posts-item-title{
   letter-spacing: -0.5px;
