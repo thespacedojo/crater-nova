@@ -33,6 +33,7 @@
   }
   &.posts-sticky{
     padding-top: 20px;
+    border-top: 1px dashed $border-color;
   }
 }
 .posts-item-title{
@@ -99,4 +100,11 @@
   @include active-hover;
   color: $primary-color;
   font-size: 1rem;
+}
+
+.posts-no-results{
+  @include secondary-font;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 1rem;  
 }
