@@ -35,14 +35,24 @@
     padding-top: 20px;
     border-top: 1px dashed $border-color;
   }
+  .posts-categories {
+    display: inline-block;
+    .posts-category{
+      display: inline-block;
+      font-size: 0.7rem;
+    }
+  }
 }
 .posts-item-title{
   letter-spacing: -0.5px;
+  line-height: 1.4;
+  display: block;
   @include small{
     font-size: 1rem;
   }
   @include medium-large{
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    margin-right: 20px;
   }
   a:hover{
     color: $secondary-color;
@@ -53,6 +63,11 @@
 }
 .posts-thumbnail{
   display: none;
+}
+.posts-commenters-discuss{
+  a{
+    white-space: nowrap;
+  }
 }
 
 .posts-page{
