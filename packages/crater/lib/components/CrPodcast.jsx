@@ -13,14 +13,14 @@ const Podcast = ({post}) => {
       <div className="podcast-links">
         <a className="podcast-discuss" href={Posts.getPageUrl(post)}>Discuss this episode</a>
         |
-        <a className="podcast-subscribe" href="#">Subscribe on iTunes</a>
+        <a className="podcast-subscribe" href="https://itunes.apple.com/us/podcast/the-meteor-podcast/id795089333?mt=2">Subscribe on iTunes</a>
       </div>
     </div>
   )
 }
 
 const CrPodcast = () => {
-  
+
   const selector = {podcastId: {$exists: true}};
   const options = {sort: {postedAt: -1}};
 
@@ -29,16 +29,16 @@ const CrPodcast = () => {
     <div className="podcast">
 
       <h4 className="podcast-heading">The Crater Podcast</h4>
-  
-      <DocumentContainer 
-        collection={Posts} 
-        publication="posts.latestpodcast" 
+
+      <DocumentContainer
+        collection={Posts}
+        publication="posts.latestpodcast"
         selector={selector}
         options={options}
         component={Podcast}
         documentPropName="post"
       />
-      
+
     </div>
   )
 }
