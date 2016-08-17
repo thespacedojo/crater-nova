@@ -16,10 +16,10 @@ class CrCategoriesList extends Component {
     const context = this.context;
     const currentQuery = _.clone(this.props.router.location.query);
     delete currentQuery.cat;
-    
+
     return (
       <div className="categories-list posts-categories">
-        <Link className="posts-category" to={{pathname: "/", query: {currentQuery}}}>All Categories</Link>
+        <Link className="posts-category" to={{pathname: "/", query: currentQuery}}>All Categories</Link>
         {categories.map(this.renderCategory)}
       </div>
     )
