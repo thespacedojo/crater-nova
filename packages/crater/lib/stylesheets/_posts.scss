@@ -108,6 +108,9 @@
   &:hover{
     @include active-hover;
   }
+  .voted &{
+    color: #bbb !important;
+  }
 }
 
 .posts-load-more{
