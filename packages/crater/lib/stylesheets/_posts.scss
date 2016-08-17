@@ -36,7 +36,7 @@
     border-top: 1px dashed $border-color;
   }
   .posts-categories {
-    display: inline-block;
+    display: inline;
     .posts-category{
       display: inline-block;
       font-size: 0.7rem;
@@ -44,9 +44,10 @@
   }
 }
 .posts-item-title{
-  letter-spacing: -0.5px;
+  // letter-spacing: -0.5px;
   line-height: 1.4;
   display: block;
+  @include primary-font;
   @include small{
     font-size: 1rem;
   }
@@ -96,6 +97,7 @@
 
 .posts-categories{
   a{
+    @include secondary-font;
     &:hover{
       @include active-hover;
     }
