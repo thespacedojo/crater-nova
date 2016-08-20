@@ -1,5 +1,5 @@
 import Telescope from 'meteor/nova:lib';
-import Posts from './collection.js'
+import Posts from './collection.js';
 import marked from 'marked';
 import Users from 'meteor/nova:users';
 
