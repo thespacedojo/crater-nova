@@ -2,7 +2,7 @@
 
 .posts-home-intro{
   padding: 20px 30px;
-  border-top: 1px dashed $border-color;  
+  border-top: 1px dashed $border-color;
   border-bottom: 1px dashed $border-color;
   margin-bottom: 20px;
   @include flex-center;
@@ -58,6 +58,9 @@
   a:hover{
     color: $secondary-color;
   }
+  a:visited{
+    color: $visited-text-color;
+  }
 }
 .posts-item-meta{
   font-size: 0.8rem;
@@ -109,7 +112,7 @@
     @include active-hover;
   }
   .voted &{
-    color: #bbb !important;
+    background: $dark-grey;
   }
 }
 
@@ -126,5 +129,5 @@
   @include secondary-font;
   padding: 20px 30px;
   text-align: center;
-  font-size: 1rem;  
+  font-size: 1rem;
 }
