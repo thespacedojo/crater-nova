@@ -17,7 +17,6 @@ Package.onUse(function (api) {
     'nova:comments@0.26.5-nova',
 
     // third-party packages
-    'fortawesome:fontawesome@4.5.0',
     'tmeasday:check-npm-versions@0.3.1',
     'std:accounts-ui@1.2.6',
     'utilities:react-list-container@0.1.10',
