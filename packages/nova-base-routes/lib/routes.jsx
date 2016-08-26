@@ -9,6 +9,7 @@ import { ListContainer, DocumentContainer } from "meteor/utilities:react-list-co
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 import Events from "meteor/nova:events";
 import Helmet from 'react-helmet';
+import ReactCookie from 'react-cookie';
 
 Telescope.routes.indexRoute = { name: "posts.list", component: Telescope.components.PostsHome };
 
@@ -45,9 +46,13 @@ Meteor.startup(() => {
 
   serverOptions.htmlHook = (html) => {
     const head = Helmet.rewind();
-    return html.replace('<head>', '<head>'+ head.title + head.meta + head.link);    
+    return html.replace('<head>', '<head>'+ head.title + head.meta + head.link);
   }
-  
+
+  serverOptions.preRender = (req, res) => {
+    ReactCookie.plugToRequest(req, res);
+  }
+
   // ReactRouterSSR.Run(AppRoutes, {historyHook: () => history}, {historyHook: () => history});
   ReactRouterSSR.Run(AppRoutes, clientOptions, serverOptions);
 
