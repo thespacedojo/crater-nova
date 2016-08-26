@@ -1,3 +1,5 @@
 Meteor.startup(function(){
-  WebAppInternals.setBundledJsCssPrefix(Meteor.settings.cdnPrefix);
+  if (process.env.NODE_ENV === 'production') {
+    WebAppInternals.setBundledJsCssPrefix(Meteor.settings.cdnPrefix);
+  }
 });
