@@ -19,7 +19,6 @@ nova:forms-tags
 # nova:embedly
 nova:api
 nova:rss
-nova:kadira
 nova:email
 # nova:subscribe
 
@@ -32,8 +31,8 @@ nova:email-templates
 nova:i18n-en-us
 
 accounts-password
-# accounts-twitter
-# accounts-facebook
+accounts-twitter
+accounts-facebook
 
 ############ Debug Packages ############
 
@@ -42,3 +41,4 @@ nova:debug
 ############ Your Packages ############
 
 crater
+meteorhacks:fast-render@2.13.0
