@@ -51,25 +51,11 @@ a{
     height: 20px;
     position: absolute;
     top: -20px;
-    left: -14px;
-    border-radius: 0 20px 0 0;
+    left: 0px;
+    border-radius: 20px 20px 0 0;
     right: 0px;
   }
-  &:after{
-    display: block;
-    content: " ";
-    // background: #aca6b9;
-    background: $light-purple linear-gradient(to top, #908b9e 0%, #aaa5b6 50%);
-    height: 20px;
-    position: absolute;
-    top: -20px;
-    left: -30px;
-    width: 30px;
-    border-radius: 20px 20px 0 0;
-    z-index: 50;
-  }
 }
-
 
 .btn{
   @include secondary-font;
