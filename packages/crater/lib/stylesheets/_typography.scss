@@ -3,5 +3,6 @@
 }
 
 @mixin secondary-font{
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Space Mono', monospace;
+  font-variant-ligatures: no-common-ligatures;
 }
