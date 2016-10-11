@@ -1,13 +1,10 @@
-
 .sidebar{
   width: 250px;
-  padding-top: 30px;
   flex-shrink: 0;
   @include small{
     display: none;
   }
 }
-
 
 .search-form{
   margin-bottom: 20px;
