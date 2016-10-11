@@ -4,4 +4,5 @@
 
 @mixin secondary-font{
   font-family: 'Space Mono', monospace;
+  font-variant-ligatures: no-common-ligatures;
 }

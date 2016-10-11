@@ -1,14 +1,12 @@
-
-
 body{
   background: $grey;
 
   @include primary-font;
 }
+
 h1, h2, h3, h4, h5{
   @include secondary-font;
 }
-
 
 a{
   color: $primary-color;
@@ -28,7 +26,7 @@ a{
 }
 
 .main{
-  margin-bottom: 30px;
+  margin: 30px auto;
   @include medium-large{
     display: flex;
   }
@@ -43,18 +41,6 @@ a{
   position: relative;
   z-index: 10;
   border-radius: 0 0 5px 5px;
-  // box-shadow: 2px 2px 0px 2px black(0.05);
-  &:before{
-    display: block;
-    content: " ";
-    background: white;
-    height: 20px;
-    position: absolute;
-    top: -20px;
-    left: 0px;
-    border-radius: 20px 20px 0 0;
-    right: 0px;
-  }
 }
 
 .btn{
@@ -66,7 +52,6 @@ a{
   font-size: 0.8rem;
   color: $light-text-color;
 }
-
 
 .page{
   padding: 30px;
