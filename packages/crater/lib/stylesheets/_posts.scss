@@ -1,5 +1,3 @@
-
-
 .posts-home-intro{
   padding: 20px 30px;
   border-top: 1px dashed $border-color;
@@ -9,6 +7,7 @@
   justify-content: center;
   background: $dark-grey;
 }
+
 .posts-home-intro-tagline{
   @include small{
     font-size: 1rem;
@@ -18,13 +17,12 @@
   }
   margin: 0 10px 0 0;
 }
-.posts-home-intro-button{
 
-}
 .posts-list-content{
   border-top: none;
   margin: 0;
 }
+
 .posts-item{
   padding: 20px 30px;
   border-bottom: 1px dashed $border-color;
@@ -35,7 +33,7 @@
     padding-top: 20px;
     border-top: 1px dashed $border-color;
   }
-  .posts-categories {
+  .posts-categories{
     display: inline;
     .posts-category{
       display: inline-block;
@@ -43,8 +41,8 @@
     }
   }
 }
+
 .posts-item-title{
-  // letter-spacing: -0.5px;
   line-height: 1.4;
   display: block;
   @include primary-font;
@@ -62,12 +60,15 @@
     color: $visited-text-color;
   }
 }
+
 .posts-item-meta{
   font-size: 0.8rem;
 }
+
 .posts-thumbnail{
   display: none;
 }
+
 .posts-commenters-discuss{
   a{
     white-space: nowrap;
@@ -115,7 +116,7 @@
   &:hover{
     @include active-hover;
   }
-  .voted &{
+  .voted{
     background: $dark-grey;
   }
 }
