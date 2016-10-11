@@ -1,14 +1,11 @@
-
-
 body{
   background: $grey;
-
   @include primary-font;
 }
+
 h1, h2, h3, h4, h5{
   @include secondary-font;
 }
-
 
 a{
   color: $primary-color;
@@ -35,7 +32,7 @@ a{
 }
 
 .main-column{
-  background: #fff;
+  background: $white;
   @include medium-large{
     flex-grow: 1;
     margin-right: 30px;
@@ -43,7 +40,6 @@ a{
   position: relative;
   z-index: 10;
   border-radius: 0 0 5px 5px;
-  // box-shadow: 2px 2px 0px 2px black(0.05);
   &:before{
     display: block;
     content: " ";
@@ -58,7 +54,6 @@ a{
   &:after{
     display: block;
     content: " ";
-    // background: #aca6b9;
     background: $light-purple linear-gradient(to top, #908b9e 0%, #aaa5b6 50%);
     height: 20px;
     position: absolute;
@@ -70,7 +65,6 @@ a{
   }
 }
 
-
 .btn{
   @include secondary-font;
 }
@@ -80,7 +74,6 @@ a{
   font-size: 0.8rem;
   color: $light-text-color;
 }
-
 
 .page{
   padding: 30px;

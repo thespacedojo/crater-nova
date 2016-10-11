@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
 }
+
 .newsletter{
   padding: 20px;
   background: none;
@@ -13,7 +14,6 @@
   @include medium-large{
     margin: 0 0 60px 0;
   }
-  // border: none;
   .newsletter-tagline{
     @include small{
       font-size: 1.2rem;
