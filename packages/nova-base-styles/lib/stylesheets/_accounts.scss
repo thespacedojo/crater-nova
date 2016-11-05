@@ -11,10 +11,10 @@
     margin-bottom: $vmargin;
   }
   .social-buttons{
-    @include flex-center;
+    align-items: center;
     justify-content: space-between;
     button{
-      margin-right: $hmargin;
+      margin-bottom: $vmargin;
       width: 100%;
       &.btn-twitter{
         background: #55acee;
@@ -25,8 +25,15 @@
         border-color: #3b5998;
       }
       &:last-child{
-        margin-right: 0;
+        margin-bottom: 0;
       }
     }
+  }
+}
+
+.users-account-menu{
+  .dropdown-menu{
+     min-width: 300px;
+     left: -75px;
   }
 }
