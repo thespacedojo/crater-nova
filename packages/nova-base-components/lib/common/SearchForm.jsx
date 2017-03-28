@@ -25,12 +25,6 @@ class SearchForm extends Component{
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      search: this.props.router.location.query.query || ''
-    });
-  }
-
   search(data) {
 
     const router = this.props.router;
